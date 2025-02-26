@@ -1,0 +1,415 @@
+@font-face{
+    font-family: "TT Lakes";
+    src: url("/fonts/TTLakesCondensed-Regular.ttf");
+    src: url("/fonts/TTLakes-Bold.ttf");
+    src: url("/fonts/TTLakes-Medium.ttf");
+  
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    color: #1B1C21;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+/* Задать :hover всем интерактивным элементам */
+.button:hover{
+    background-color: #41F6D7;
+}
+
+.wrapper {
+    min-width: 288px; 
+    max-width: 768px; 
+    margin: 0 auto; 
+    display: block;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 88px;
+    background-color: white;
+    padding-right: 0;
+    margin: 0;   
+}
+
+
+.header__menu {
+    display: flex;
+    padding: 0;
+    align-items: center; 
+    list-style: none;
+    box-sizing: border-box;
+    justify-content: center;   
+}
+
+.header__item {
+    display: flex;
+    margin: auto;
+    margin-right: 16px;
+}
+
+.header__item_hidden{
+    display: none;
+}
+
+.article {
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu-first__burger {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 20px;
+    background-image: url(img/burger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 16px;
+}
+
+
+.header__separator {
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 4px;  
+}
+
+
+.menu-second__telefon {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 20px;
+    background-image: url(img/phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-second__chat {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 20px;
+    background-size: 100%;
+    background-image: url(img/chat\ \(1\).svg); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-second__profile {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 20px;
+    background-image: url(img/profile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-second__settings {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 20px;
+    background-image: url(img/nastroyki.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-second__search {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 20px;
+    background-image: url(img/poisk.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    background-color:#F8F8F8;
+    border-top: 1px solid #D9FFF5;
+    height: 100vh;
+}
+
+.title {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin-left: 16px;
+    font-weight: bold;
+}
+
+.title::before {
+    content: " ";
+    display: flex;
+    width: 4px;
+    height: 40px;
+    background-color:#41F6D7;
+    border-radius: 5px;
+    column-gap: 12px;
+    position: absolute;
+    left: 0;
+}
+
+.navigation-second {
+    margin-left: 16px;
+    
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    overflow: scroll;   
+}
+
+.link {
+    text-decoration: none;
+    color: #7E7E82;
+}
+
+.list__item {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    height:40px;
+    align-items: center;
+    text-wrap: nowrap;
+    
+}
+.list__item:first-child {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+.list__item:hover {
+    background-color: #41F6D7;
+    border-radius: 6px;
+} 
+
+.article-content__paragraph { 
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin: 16px;   
+}
+
+.article-content__read-more {
+    display: flex;
+         
+}
+
+.read-more__button {  
+    place-items: center;
+    position: relative;
+    background-color:#F8F8F8;
+    background: none; /* Сделаем фон прозрачным */
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 8px;
+    
+    margin-bottom: 16px;
+    font-family: "TT Lakes", sans-serif;
+}
+
+.read-more__strelka::before {
+    content: ""; 
+}
+
+.header__separator_hidden {
+    display: none; 
+}
+
+.menu-main,
+.paragraph-second_hidden {
+    display: none; 
+}
+
+.image__logo {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    overflow: hidden;
+
+}                
+    
+@media screen and (min-width: 768px) {
+    .wrapper {
+    min-width: 720px; 
+    max-width: 1120px; 
+}
+
+.header__item_hidden{
+    display: block;
+    display: flex;
+}
+
+.list {   
+    overflow: scroll;
+} 
+
+.paragraph-second_hidden {
+    display: block;
+    display: flex;
+}
+
+.paragraph-second__text-two_hidden {
+    display: none;
+}
+
+.header__separator {
+    height: 32px;
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 4px;
+    }
+
+.header__separator_hidden {
+    display: block;
+    display: flex;
+}
+
+.menu-second__telefon_hidden,                         
+.menu-second__chat_hidden,                        
+.menu-second__profile_hidden {
+    display: block; 
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 32px 24px 40px 24px;
+}
+    
+.article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    
+.article-content__paragraph {
+    margin: 0;
+}
+
+.image__logo {
+    
+    min-width: 360px;
+    height: 50%;    
+}
+} 
+
+
+@media screen and (min-width: 1120px) {
+
+.wrapper {
+    min-width: 1063px; 
+    margin: 0 auto;
+}
+
+.header {
+    display: none;
+}
+
+.menu-third__settings { /* третье меню - настройки */
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 20px;
+    background-image: url(img/nastroyki.svg);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.menu-third__search { /* третье меню - поиск */
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 20px;
+    background-image: url(img/poisk.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.paragraph-second__text-one_hidden {
+    display: none;
+}
+
+.paragraph-second__text-two_hidden {
+    display: block;
+}
+
+.paragraph-second_hidden {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    flex-wrap: wrap;
+}
+
+.section-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu-main {
+    display: flex;
+    list-style: none;  
+}
+
+.menu-main__text {
+    display: flex;
+    align-items: center;
+    padding-right: 32px;
+}
+.menu-main__btn {
+    padding-right: 9px;
+}
+
+.image__logo {
+    width: 100%;
+    height: 50%;
+    }
+
+}
+
