@@ -28,12 +28,11 @@ body{
 }
 
 .wrapper {
-    min-width: 288px; 
-    max-width: 720px; 
+    width: 100%; 
+    max-width: 767px; 
     margin: 0 auto; 
     display: block;
     padding: 0;
-    margin: 0;
     overflow: hidden;
 }
 
@@ -232,18 +231,22 @@ body{
 }
 
 .read-more__button {  
-    place-items: center;
-    position: relative;
-    background-color:#F8F8F8;
-    background: none; /* Сделаем фон прозрачным */
-    border: none;
-    font-size: 16px;
-    line-height: 24px;
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    line-height: 24px; 
     margin-left: 16px;
-    
-    margin-bottom: 16px;
-    font-family: "TT Lakes", sans-serif;
+    margin-bottom: 16px; 
+    padding: 0; 
+    font-family: "TT Lakes", sans-serif; 
+    transition: background 0.3s;
 }
+.read-more__button:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
 .read-more__strelka{
     margin-right: 8px;
 }
@@ -271,8 +274,8 @@ body{
     
 @media screen and (min-width: 768px) {
     .wrapper {
-    min-width: 720px; 
-    max-width: 1063px; 
+    min-width: 768px; 
+    max-width: 1119px; 
 }
 
 .header__item_hidden{
@@ -340,7 +343,7 @@ body{
 @media screen and (min-width: 1120px) {
 
 .wrapper {
-    min-width: 1063px; 
+     min-width: 1120px; 
     margin: 0 auto;
 }
 
@@ -348,7 +351,7 @@ body{
     display: none;
 }
 
-.menu-third__settings { /* третье меню - настройки */
+.menu-third__settings { 
     width: 40px;
     height: 40px;
     background-color: #FF3E79;
@@ -359,7 +362,7 @@ body{
     background-position: center; 
 }
 
-.menu-third__search { /* третье меню - поиск */
+.menu-third__search { 
     width: 40px;
     height: 40px;
     background-color: #FF3E79;
