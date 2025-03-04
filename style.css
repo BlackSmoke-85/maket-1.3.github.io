@@ -25,6 +25,12 @@ body{
 /* Задать :hover всем интерактивным элементам */
 .button:hover{
     background-color: #41F6D7;
+    transition: 0.1s;
+}
+.read-more__button:hover{
+    background-color: #41F6D7;
+    transition: 0.1s;
+    border-radius: 6px;
 }
 
 .wrapper {
@@ -225,27 +231,20 @@ body{
     margin: 16px;   
 }
 
-.article-content__read-more {
+.read-more__button {  
     display: flex;
-         
+    background: none; /* Фон по умолчанию - прозрачный */
+    border: none; /* Убираем рамку */
+    cursor: pointer; /* Указываем, что это кликабельный элемент */
+    font-size: 16px; /* Размер шрифта */
+    line-height: 24px; /* Высота строки */
+    margin-left: 16px; /* Отступ слева */
+    margin-bottom: 16px; /* Отступ снизу */
+    padding: 0; /* Убираем внутренние отступы */
+    font-family: "TT Lakes", sans-serif; /* Шрифт */
+    transition: background 0.3s; /* Плавный переход для фона */
 }
 
-.read-more__button {  
-    background: none; 
-    border: none; 
-    cursor: pointer; 
-    font-size: 16px; 
-    line-height: 24px; 
-    margin-left: 16px;
-    margin-bottom: 16px; 
-    padding: 0; 
-    font-family: "TT Lakes", sans-serif; 
-    transition: background 0.3s;
-}
-.read-more__button:hover {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-}
 
 .read-more__strelka{
     margin-right: 8px;
@@ -343,7 +342,7 @@ body{
 @media screen and (min-width: 1120px) {
 
 .wrapper {
-     min-width: 1120px; 
+    min-width: 1120px; 
     margin: 0 auto;
 }
 
@@ -351,7 +350,7 @@ body{
     display: none;
 }
 
-.menu-third__settings { 
+.menu-third__settings { /* третье меню - настройки */
     width: 40px;
     height: 40px;
     background-color: #FF3E79;
@@ -362,7 +361,7 @@ body{
     background-position: center; 
 }
 
-.menu-third__search { 
+.menu-third__search { /* третье меню - поиск */
     width: 40px;
     height: 40px;
     background-color: #FF3E79;
